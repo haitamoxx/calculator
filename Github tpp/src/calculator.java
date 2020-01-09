@@ -9,23 +9,26 @@ public class calculator
         Scanner in = new Scanner(System.in);
         double a, b, c = 0.0;
 
-        System.out.print("Enter the first number \n");
+        System.out.print("Entrer le premier nombre: \n");
         a = in.nextDouble();
-        System.out.print("And enter second  \n");
+        System.out.print("Entrer le deuxieme:  \n");
         b = in.nextDouble();
-        System.out.print("Choose the operation  " +
+        System.out.print("Choisire une operation:  " +
               "\n1.Addition" +
         		"\n2.Subtraction" +
         		"\n3.Multiplication" +
         		"\n4.Division" +
-        		"\n5.Power" +
-        		"\n#Please enter the number of operation \n");
+        		"\n5.puissance" +
+        		"\n#Veuiller entrer le nombre de l'operation: \n");
         double somethin = in.nextDouble();
         double addition = 1;
         double subtraction = 2;
         double multiplication = 3;
         double division = 4 ;
         double power = 5;
+        
+        
+        
         if (somethin == addition) {
         	c = a + b;  
         	System.out.println(a + " + " + b + " = " + c);  }
@@ -51,5 +54,6 @@ public class calculator
         			System.out.println(Math.pow(b, 2)); }
         
         }
+  
     }
 }
